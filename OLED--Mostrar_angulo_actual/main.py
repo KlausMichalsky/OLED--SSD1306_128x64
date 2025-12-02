@@ -23,9 +23,8 @@ oled = SSD1306_I2C(128, 64, i2c)
 # Valor inicial
 degrees_1decimal = "0.0"
 
+
 # Función para mostrar en OLED
-
-
 def mostrar(texto1, texto2):
     oled.fill(0)
     oled.text(texto1, 0, 0)
