@@ -1,9 +1,0 @@
-#line 1 "C:\\Users\\Benutzer1\\Documents\\Arduino\\SSD1306_128x64_OLED\\OLED--Mostrar_angulo_actual\\.vscode\\extensions.json"
-{
-    "recommendations": [
-        "ms-python.python",
-        "visualstudioexptteam.vscodeintellicode",
-        "ms-python.vscode-pylance",
-        "paulober.pico-w-go"
-    ]
-}
