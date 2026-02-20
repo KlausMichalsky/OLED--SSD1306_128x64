@@ -1,4 +1,4 @@
-# Implementacion del OLED SSD1306 128x64 
+# Implementacion del OLED SSD1306 128x64 0.96"
 ####  ALGORITMO:
   - Mandar y recibir datos para mosrtarlos en la panalla OLED
   - Uso de UART para comunicacion entre microcontroladores
