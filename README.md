@@ -7,4 +7,4 @@
   - Usa Wire1 para I2C independiente de los pines por defecto
 #### HARDWARE:
   - MCU        : RP2040-Zero
-  - Display : OLED SSD1306 128x64
+  - Display : OLED SSD1306 128x64 0.96"
