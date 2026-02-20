@@ -1,38 +1,27 @@
-"""
-/************************************************************************************************************
- 🔹 MASTER RP2040-Pico: ESCANEO I2C 🔹
-  - Inicializa el bus I2C0 del Pico usando pines GP4 (SDA) y GP5 (SCL).
-  - Escanea todos los dispositivos conectados al bus I2C.
-  - Muestra en consola las direcciones encontradas (en decimal) mediante print().
-  - Útil para verificar la conexión y la dirección de módulos I2C como OLED, sensores, etc.
-  - Este código no altera los dispositivos, solo detecta su presencia en el bus.
-    K. Michalsky – 11.2025
-*************************************************************************************************************/
-
-/************************************************************************************************************
- Esquema de conexiones I2C:
-
- ┌──────────────┐                      ┌───────────────┐
- │ Raspberry Pi │                      │ Módulo I2C    │
- │     Pico     │                      │ (OLED, sensor)│
- ├──────────────┤                      ├───────────────┤
- │ GP4  (SDA) ───────────────────────────────▶ SDA     │
- │ GP5  (SCL) ───────────────────────────────▶ SCL     │
- │ GND ──────────────────────────────────────▶ GND     │
- │ 3V3 ─────────────────────────────────────▶ VCC      │
- └──────────────┘                      └───────────────┘
-
-------------------------------------------------------------
- Configuración de pines usada:
-   I2C0 SDA = GP4
-   I2C0 SCL = GP5
-   Velocidad I2C = default
-------------------------------------------------------------
-
-i2c.scan() devuelve [60] → 60 decimal = 0x3C
-En la librería SSD1306_I2C la dirección por defecto también es 0x3C
-*************************************************************************************************************/
-"""
+# ========================================================================
+#                  🔸 O L E D  -  I 2 C   S C A N 🔸
+# ========================================================================
+#  Archivo    : OLED--I2C_Scan_test.py
+#  Autor      : Klaus Michalsky
+#  Fecha      : Feb-2026
+#
+#  DESCRIPCION
+#  -----------------------------------------------------------------------
+#  - Inicializa bus I2C0 (GP4=SDA, GP5=SCL) del Pico.
+#  - Escanea todos los dispositivos conectados al bus I2C.
+#  - Muestra en consola las direcciones encontradas.
+#  - Útil para verificar conexión y dirección de módulos I2C (OLED, sensores, etc.).
+#  - No altera los dispositivos, solo detecta su presencia.
+#
+#  HARDWARE
+#  -----------------------------------------------------------------------
+#  MCU     : Raspberry Pi Pico
+#  I2C0    : GP4=SDA, GP5=SCL
+#
+#  ESTADO
+#  -----------------------------------------------------------------------
+#  ✅ Funcional
+# ========================================================================
 
 from machine import Pin, I2C
 i2c = I2C(0, scl=Pin(5), sda=Pin(4))  # tus pines I2C

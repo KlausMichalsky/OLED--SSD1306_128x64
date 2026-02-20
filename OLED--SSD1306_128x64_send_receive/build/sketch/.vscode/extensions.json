@@ -1,0 +1,9 @@
+#line 1 "C:\\Users\\Benutzer1\\Documents\\# Github repositories\\OLED--SSD1306_128x64\\OLED--SSD1306_128x64_Send_angle\\.vscode\\extensions.json"
+{
+    "recommendations": [
+        "ms-python.python",
+        "visualstudioexptteam.vscodeintellicode",
+        "ms-python.vscode-pylance",
+        "paulober.pico-w-go"
+    ]
+}

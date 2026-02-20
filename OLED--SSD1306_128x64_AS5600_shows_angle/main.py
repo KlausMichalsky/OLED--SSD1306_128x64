@@ -1,13 +1,28 @@
-"""
-/************************************************************************************************************
- 🔹 LECTURA DE ÁNGULO CON AS5600 vía I2C (Wire1), imprimir en OLED 🔹
-  - Lee el ángulo del sensor AS5600 conectado a GP26 (SDA) y GP27 (SCL) usando I2C.
-  - Convierte el valor crudo de 12 bits (0–4095) a grados (0°–360°).
-  - Manda el angulo actual al OLED SSD1306 cada 200 ms.
-  - Usa Wire1 para I2C independiente de los pines por defecto.
-  K. Michalsky – 11.2025
-*************************************************************************************************************/
-"""
+# ========================================================================
+#           🔸 O L E D  -  A S 5 6 0 0   S H O W S   A N G L E 🔸
+# ========================================================================
+#  Archivo    : OLED--SSD1306_128x64_AS5600_shows_angle.ino.py
+#  Autor      : Klaus Michalsky
+#  Fecha      : Feb-2026
+#
+#  DESCRIPCION
+#  -----------------------------------------------------------------------
+#  - Lee ángulo del sensor AS5600 vía I2C (Wire1) en GP26=SDA, GP27=SCL.
+#  - Convierte valor crudo 12 bits (0–4095) a grados (0°–360°).
+#  - Muestra ángulo en OLED SSD1306 128x64 cada 200 ms.
+#  - Recibe valor desde Zero por UART0 (GP0=TX, GP1=RX).
+#
+#  HARDWARE
+#  -----------------------------------------------------------------------
+#  MCU     : Raspberry Pi Pico
+#  Sensor  : AS5600 I2C (GP26=SDA, GP27=SCL)
+#  OLED    : SSD1306 128x64 I2C (GP4=SDA, GP5=SCL)
+#  UART0   : GP0=TX, GP1=RX (Zero)
+#
+#  ESTADO
+#  -----------------------------------------------------------------------
+#  ✅ Funcional
+# ========================================================================
 
 from machine import UART, Pin, I2C
 import utime

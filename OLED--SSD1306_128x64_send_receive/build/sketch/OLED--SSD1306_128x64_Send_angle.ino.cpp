@@ -1,3 +1,5 @@
+#include <Arduino.h>
+#line 1 "C:\\Users\\Benutzer1\\Documents\\# Github repositories\\OLED--SSD1306_128x64\\OLED--SSD1306_128x64_Send_angle\\OLED--SSD1306_128x64_Send_angle.ino"
 // ========================================================================
 //                 🔸 O L E D  -  S E N D   A N G L E 🔸
 // ========================================================================
@@ -41,6 +43,11 @@
 //  ✅ Funcional
 // ========================================================================
 
+#line 44 "C:\\Users\\Benutzer1\\Documents\\# Github repositories\\OLED--SSD1306_128x64\\OLED--SSD1306_128x64_Send_angle\\OLED--SSD1306_128x64_Send_angle.ino"
+void setup();
+#line 51 "C:\\Users\\Benutzer1\\Documents\\# Github repositories\\OLED--SSD1306_128x64\\OLED--SSD1306_128x64_Send_angle\\OLED--SSD1306_128x64_Send_angle.ino"
+void loop();
+#line 44 "C:\\Users\\Benutzer1\\Documents\\# Github repositories\\OLED--SSD1306_128x64\\OLED--SSD1306_128x64_Send_angle\\OLED--SSD1306_128x64_Send_angle.ino"
 void setup(){
     Serial.begin(115200);       // Debug USB
     Serial1.setTX(0);           // TX al Pico
@@ -64,3 +71,4 @@ void loop(){
         Serial.println(respuesta);
     }
 }
+
