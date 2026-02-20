@@ -16,7 +16,7 @@
 #  -----------------------------------------------------------------------
 #  MCU     : Raspberry Pi Pico
 #  Sensor  : AS5600 I2C (GP26=SDA, GP27=SCL)
-#  OLED    : SSD1306 128x64 I2C (GP4=SDA, GP5=SCL)
+#  OLED    : SSD1306 128x64 0.96” I2C (GP4=SDA, GP5=SCL)
 #  UART0   : GP0=TX, GP1=RX (Zero)
 #
 #  ESTADO
