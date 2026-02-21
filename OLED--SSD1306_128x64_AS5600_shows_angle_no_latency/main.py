@@ -1,7 +1,7 @@
 # ========================================================================
 # 🔸 O L E D - A S 5 6 0 0  S H O W S  A N G L E  N O  L A T E N C Y 🔸
 # ========================================================================
-#  Archivo    : OLED--SSD1306_128x64_AS5600_shows_angle.ino.py
+#  Archivo    : OLED--SSD1306_128x64_AS5600_shows_angle_no_latency.ino.py
 #  Autor      : Klaus Michalsky
 #  Fecha      : Feb-2026
 #
@@ -11,6 +11,7 @@
 #  - Convierte valor crudo 12 bits (0–4095) a grados (0°–360°).
 #  - Muestra ángulo en OLED SSD1306 128x64 cada 200 ms.
 #  - Recibe valor desde Zero por UART0 (GP0=TX, GP1=RX).
+#  - Suavizado exponencial para evitar parpadeos en OLED.
 #
 #  HARDWARE
 #  -----------------------------------------------------------------------
