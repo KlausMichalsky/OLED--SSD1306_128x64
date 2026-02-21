@@ -1,3 +1,5 @@
+#include <Arduino.h>
+#line 1 "C:\\Users\\Benutzer1\\Documents\\# Github repositories\\OLED--SSD1306_128x64\\OLED--SSD1306_128x64_AS5600_shows_angle\\OLED--SSD1306_128x64_AS5600_shows_angle.ino"
 // ========================================================================
 //          🔸 O L E D  -  A S 5 6 0 0   S H O W S   A N G L E 🔸
 // ========================================================================
@@ -37,6 +39,13 @@
 // SETUP
 // ========================================================================
 
+#line 40 "C:\\Users\\Benutzer1\\Documents\\# Github repositories\\OLED--SSD1306_128x64\\OLED--SSD1306_128x64_AS5600_shows_angle\\OLED--SSD1306_128x64_AS5600_shows_angle.ino"
+void setup();
+#line 59 "C:\\Users\\Benutzer1\\Documents\\# Github repositories\\OLED--SSD1306_128x64\\OLED--SSD1306_128x64_AS5600_shows_angle\\OLED--SSD1306_128x64_AS5600_shows_angle.ino"
+void loop();
+#line 80 "C:\\Users\\Benutzer1\\Documents\\# Github repositories\\OLED--SSD1306_128x64\\OLED--SSD1306_128x64_AS5600_shows_angle\\OLED--SSD1306_128x64_AS5600_shows_angle.ino"
+uint16_t readAS5600Angle();
+#line 40 "C:\\Users\\Benutzer1\\Documents\\# Github repositories\\OLED--SSD1306_128x64\\OLED--SSD1306_128x64_AS5600_shows_angle\\OLED--SSD1306_128x64_AS5600_shows_angle.ino"
 void setup()
 {
     Serial.begin(115200);  // Comunicación Serial USB
